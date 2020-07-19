@@ -83,6 +83,7 @@ nav li:visited {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .carousel-container {
@@ -268,7 +269,8 @@ footer {
 
     .main-info {
         flex-direction: row;
-        margin-bottom: 8em;
+
+        padding-bottom: 4em;
     }
 
     .main-images {
