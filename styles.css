@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a { cursor: pointer;}
+
+/* ===============
+    HEADER
+   ===============
+*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.search {
+    margin: 1.5em;
+}
+
+.logo {
+    width: 70%;
+    max-width: 400px;
+}
+
+.searchbar input {
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border: 2px solid #FFD527;
+}
+
+nav {
+    background-color: #FFD527;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 1em 0;
+}
+
+nav li {
+    list-style: none;
+    margin: 0.5em 2em;
+    cursor: pointer;
+    color: #291770;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav li:last-child {
+    border: 0;
+}
+
+nav li:hover,
+nav li:focus,
+nav li:visited {
+    color: #000;
+}
+
+
+/* ===============
+    MAIN INFO
+   ===============
+*/
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: left;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-images img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 1em;
+}
+
+.side-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-links img {
+    height: 200px;
+    width: 200px;
+    margin: 1em;
+}
+
+.side-links figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.imp-links {
+    margin-top: 5em;
+}
+
+.imp-links a {
+    text-decoration: none;
+    color: #1792d2;
+}
+
+.imp-links a:hover {
+    color: #291770;
+}
+
+.imp-links li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.imp-links img {
+    width: 25px;
+}
+
+
+.news {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+}
+
+article {
+    padding: 2em;
+}
+
+.carousel {
+    padding: 1em;
+    object-fit: none;
+    /* max-width: 100%; */
+    min-width: 300px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    background-color: #FFD527;
+    padding: 1em 1.7em;
+    color: #291770;
+}
+
+.whats-new {
+    border-radius: 5px;
+    border: 1px solid #291770;
+    overflow: scroll;
+    height: 30em;
+    position: relative;
+}
+
+.whats-new span {
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.whats-new a {
+    text-decoration: none;
+    color: #291770;
+
+}
+
+.whats-new a:hover {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.whats-new li {
+    list-style: none;
+    font-size: 0.8rem;
+    margin: 0.5em 0;
+    font-weight: bold;
+
+}
+
+footer {
+    background-color: #FFD527;
+    padding: 1em 2em;
+    color: #291770;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (min-width:1170px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5em 0;
+        margin: 0;
+    }
+
+    nav li {
+        list-style: none;
+        margin: 0 2em;
+        cursor: pointer;
+        color: #291770;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-right: 2px solid #291770;
+        padding-right: 3.5em;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel-container {
+        width: 55%;
+        margin: 1em;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 60vh;
+        min-height: 60vh;
+        padding: 0;
+    }
+
+    .main-info {
+        flex-direction: row;
+    }
+
+    .main-images {
+        width: 20%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-images img {
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        object-position: top;
+
+    }
+
+    .side-links figure {
+        margin: 0;
+    }
+
+    .side-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .side-links img {
+        height: 100px;
+        width: 100px;
+        margin: 1em;
+    }
+
+    .side-links figcaption {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .news {
+        flex-direction: row;
+    }
+
+    .news article {
+        width: 100%;
+    }
+
+    .whats-new ul {
+        padding: 0 2em;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .icons {
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+/* ===============
+    TYPOGRAPHY
+   ===============
+*/
+.navbar li {
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    color: #444;
+    list-style: none;
+}
+
+.navbar a {
+    color: #1792d2;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #291770;
+}
+
+.search a {
+    color: #1792d2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search a:hover,
+.search a:focus {
+    color: #291770;
+    text-decoration: none;
+}
+
+figcaption,
+figcaption span,
+br {
+    margin: 0;
+    padding: 0;
+}
+
+.name p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.role p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+figcaption span:nth-child(3) p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -0.9em;
+}
